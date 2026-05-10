@@ -1,2 +1,31 @@
-<iframe src="https://khanomiorg.ir/alireza123/" 
-style="width:100%;height:100vh;border:none;"></iframe>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Loading...</title>
+<style>
+html,body{
+margin:0;
+height:100%;
+}
+iframe{
+width:100%;
+height:100%;
+border:none;
+}
+</style>
+</head>
+<body>
+
+<iframe id="frame"></iframe>
+
+<script>
+const target = "https://khanomiorg.ir/alireza123/";
+const proxy = "https://api.allorigins.win/raw?url=";
+
+document.getElementById("frame").src =
+proxy + encodeURIComponent(target);
+</script>
+
+</body>
+</html>
